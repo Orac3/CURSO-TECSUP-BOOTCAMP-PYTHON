@@ -1,0 +1,83 @@
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  width: 320px;
+  padding: 32px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 15px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+img {
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 14px;
+  color: hsl(75, 94%, 57%);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  width: 100%;
+}
+
+button {
+  border: none;
+  width: 100%;
+  background-color: hsl(0, 0%, 20%);
+  padding: 16px 8px;
+  border-radius: 4px;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+
+  transition: all 0.3s ease-in-out;
+}
+
+button:last-child {
+  background: linear-gradient(
+    45deg,
+    #F58529,
+    #DD2A7B,
+    #8134AF,
+    #515BD4
+  );
+}
+
+button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+button:last-child:hover {
+  background: none;
+  background-color: hsl(75, 94%, 57%);
+}

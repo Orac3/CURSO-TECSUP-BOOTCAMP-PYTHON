@@ -1,0 +1,38 @@
+body {
+  /* background-color: orange; */
+}
+
+p {
+  color: blue;
+  background-color: chartreuse;
+  font-size: 20px;
+}
+
+/* TODO: Añadan un background a la etiqueta h2, h3, h4 y cambien su tamaño a 50px */
+
+h2 {
+  background-color: aqua;
+  font-size: 50px;
+}
+
+h3 {
+  background-color: orange;
+  font-size: 50px;
+}
+
+h4 {
+  background-color: blueviolet;
+  font-size: 50px;
+}
+
+#estado {
+  background-color: goldenrod;
+}
+
+.btn {
+  background-color: red;
+}
+
+.texto-resaltado {
+  color: blue;
+}

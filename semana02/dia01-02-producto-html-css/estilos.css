@@ -1,0 +1,126 @@
+/*
+font-family: "Montserrat", sans-serif;
+font-family: "Fraunces", serif;
+*/
+
+body {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 14px;
+
+  background-color: hsl(30, 38%, 92%);
+
+  /* border: 1px solid red; */
+
+  height: 100vh;
+
+  margin: 0;
+
+  display: flex; /* Flexbox */
+
+  justify-content: center; /* Alineamiento horizontal */
+  align-items: center; /* Alineamiento vertical */
+}
+
+main {
+  /* border: 3px solid red; */
+
+  width: 650px;
+
+  display: flex;
+
+  min-height: 400px;
+
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.photo {
+  width: 350px;
+
+  background-image: url(images/image-product-desktop.jpg);
+  background-size: cover;
+}
+
+.content {
+  width: 300px;
+
+  padding: 28px; /* 14px x 2 = 28px */
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 21px; /* 14px + 7px */
+
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* TODO: Terminar con los estilos de las etiquetas h2 y p aplicando colores, fuentes y tamños de letra */
+
+.content h2 {
+  /* border: 1px solid red; */
+
+  margin: 0;
+
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 7px;
+}
+
+.content h1 {
+  /* border: 1px solid blue; */
+
+  margin: 0; /* Resetea el margen por defecto del h1 */
+
+  color: hsl(158, 42%, 18%);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.content p {
+  /* border: 1px solid green; */
+
+  margin: 0;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.content div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.content span {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.content s {
+  color: hsl(228, 12%, 48%);
+}
+
+/* TODO: Agregar los stilos del botón add to cart */
+
+.content button {
+  /* border: 1px solid red; */
+  border: none;
+
+  background-color: hsl(158, 36%, 37%);
+  color: white; /* hsl(0, 0%, 100%) <> white */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+
+  padding: 14px;
+  border-radius: 7px;
+
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
