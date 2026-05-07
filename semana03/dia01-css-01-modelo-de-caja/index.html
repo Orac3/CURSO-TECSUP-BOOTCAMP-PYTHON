@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS - Modelo de caja</title>
-    <style>
-        .box{
-            background-color: coral;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS - Modelo de caja</title>
+  <style>
+    .box {
+      background-color: coral;
 
-            width: 200px;
-            height: 50px;
+      width: 200px;
+      height: 50px;
 
-            border: 5px solid red;
+      border: 5px solid red;
 
-            padding: 10px; /* Espacio interno, entre el contenido y el borde */
-            margin: 10px; /* Espacio externo, despues del borde */
+      padding: 10px; /* Espacio interno, entre el contenido y el borde */
+      margin: 10px; /* Espacio externo, después del borde */
 
-            padding: 16px 8px 16px 8px; /* TOP BOTTON RIGHT LEFT */
+      padding: 16px 8px 16px 8px; /* TOP BOTTOM RIGHT LEFT */
 
-            box-sizing: content-box; /* Valor por defecto, deja que nosotros calculemos el ancho de la caja incluyendo ancho, alto, padding, borde, margin */
-            box-sizing: border-box;
-        }
+      box-sizing: content-box; /* Valor po defecto, deja que nosotros calculemos el ancho de la caja incluyendo ancho, alto, padding, borde, margin */
+      box-sizing: border-box;
+    }
 
-        .bloque{
-            background-color: lightcoral;
-            display: block;
-        }
-        .enlinea{
-            background-color: lightgreen;
-            display: inline; /* por defecto */
-        }
-        .enlinea-bloque{
-            background-color: lightpink;
-            display: block; /* valor por defecto del div */
-            display: inline-block;
-        }
-    </style>
+    .bloque {
+      background-color: lightcoral;
+      display: block;
+    }
+    .enlinea {
+      background-color: lightgreen;
+      display: inline; /* por defecto */
+    }
+    .enlinea-bloque {
+      background-color: lightpink;
+      display: block; /* valor por defecto del div */
+      display: inline-block;
+    }
+  </style>
 </head>
 <body>
-    <div class="box">Modelo de caja (box model)</div>
+  <div class="box">Modelo de caja</div>
 
-    <!-- Tipos de cajas -->
+  <!-- Tipos de cajas -->
 
-    <div class="bloque">BLOQUE</div>
-    <span class="enlinea">ENLINEA</span>
-    <span class="enlinea">ENLINEA</span>
-    <div class="enlinea-bloque">ENLINE Y BLOQUE</div>
+  <div class="bloque">BLOQUE</div>
+  <span class="enlinea">ENLINEA1</span>
+  <span class="enlinea">ENLINEA2</span>
+  <div class="enlinea-bloque">ENLINE Y BLOQUE</div>
 
-    <article>articulo</article>
+  <article>articulo</article>
 
-    <s>texto tachado</s>
+  <s>texto tachado</s>
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipiscing elit. Odit, nam autem tempora ipsum exercitationem itaque corporis labore commodi, cumque molestiae praesentium optio eveniet corrupti ab dicta sint quo deleniti. Cum?</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, nam autem tempora ipsum exercitationem itaque corporis labore commodi, cumque molestiae praesentium optio eveniet corrupti ab dicta sint quo deleniti. Cum?</p>
+
+  <h1>cabecera</h1>
 </body>
 </html>
