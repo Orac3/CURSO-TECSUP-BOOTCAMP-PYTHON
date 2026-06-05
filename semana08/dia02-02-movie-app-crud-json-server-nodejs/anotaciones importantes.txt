@@ -1,0 +1,5 @@
+el comando:json-server --watch db.json
+no funciona, en su lugar usar: ./node_modules/.bin/json-server --watch db.json
+
+para levantar el servidor usar: npm run dev
+para detenerlo presionar: ctrl + c

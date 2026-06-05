@@ -1,0 +1,367 @@
+/* 
+font-family: "Raleway", sans-serif;
+font-family: "Open Sans", sans-serif;
+*/
+
+/* GENERALES */
+
+/* Selector universal */
+* {
+    /* border: 1px solid yellow; */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(218, 28%, 13%);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+  /* TODO: RWD(RESPONSIVE WEB DESIGN) para imágenes */
+  max-width: 100%; /* La imagen nunca será más grande que su contenedor */
+  height: auto;
+}
+
+/* UTILITARIOS */
+
+.hidden {
+    display: none;
+}
+
+.wrapper {
+    width: min(100% - 3rem, 1440px); /* TODO: Adaptar el ancho a dispositivos más pequeños */
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+     /* border: 1px solid yellow;  */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 42px;
+
+    background-color: hsl(217, 28%, 15%);
+}
+
+.header__logo {
+    width: 10rem;
+}
+
+.header__nav {
+    /* TODO: Terminar el css de esta navegación */
+    /* border: 1px solid yellow; */
+    display: flex;
+    gap: 42px; /* 42px = 14 * 3 = 3rem */
+}
+
+/* HERO SECTION */
+
+/*  REM: Root EM(Ancho de la letra M) */
+
+.hero {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    padding-top: 3rem;
+    padding-bottom: 12rem;
+
+    background-image: url(images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+
+    background-color: hsl(217, 28%, 15%);
+}
+
+@media (min-width:992) {
+    .hero {
+        background-image: url(images/bg-curvy-desktop.svg);
+    }
+}
+
+.hero__title {
+    /* border: 1px solid yellow; */
+
+    /* width: 720px; */
+    /* min: Elige el valor más pequeño entre los que le pasemos */
+    width: min(100% - 3rem, 720px);
+
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.hero__text {
+    /* border: 1px solid yellow; */
+    text-align: center;
+}
+
+.hero__button {
+    border: none;
+    border-radius: 7rem;
+    padding: 1rem;
+    min-width: 260px;
+    color: white;
+    background: linear-gradient(90deg,hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%) 100%);
+}
+
+/* FEATURES SECTION */
+
+/* TODO: maquetar esta sección con HTML y CSS */
+
+.features {
+    /* border: 1px solid yellow; */
+
+    display: grid;
+    grid-template-columns: 340px;
+    grid-template-rows: 240px;
+    justify-content: center;
+    gap: 5rem;
+}
+
+/*
+TAMAÑOS DE PANTALLA SUGERIDOS:
+
+576px  -> pantallas pequeñas (celulares)
+768px  -> pantallas pequeñas (tablets y celulares)
+992px  -> pantallas medianas (Desktop)
+1280px -> pantallas grandes (Desktops, TVs)
+*/
+
+/* MEDIA QUERY: Se aplica a dispositivos móviles, tables o desktops+ */
+
+@media (min-width: 992px) {
+    .features {
+        grid-template-columns: 340px 340px;
+        grid-template-rows: 240px 240px;
+    }
+}
+
+.feature {
+    /* border: 1px solid yellow; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feature__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    text-align: center;
+}
+
+.feature__text {
+    text-align: center;
+}
+
+/* TODO: Terminar la sección collaboration */
+
+.collaboration {
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 4rem;
+
+  padding-top: 8rem;
+}
+
+@media (min-width: 992px) {
+  .collaboration {
+    flex-direction: row;
+  }
+}
+
+.productive {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.productive__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.productive__text {
+}
+
+.productive__link {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: hsl(176, 68%, 64%);
+
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+
+  width: 10.8rem;
+  padding-bottom: 0.2rem;
+}
+
+/* TESTIMONIALS SECTION */
+
+.testimonials {
+  /* border: 1px solid yellow; */
+
+  padding-top: 8rem;
+  padding-bottom: 18rem;
+}
+
+.testimonials--wrapper {
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  /* TODO: Organizar correctamente los testimonios en dispositivos móviles */
+  .testimonials--wrapper {
+    flex-direction: row;
+  }
+}
+
+.testimonial {
+  width: 23rem;
+  /* padding: TOP RIGHT BOTTOM LEFT */
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: hsl(219, 30%, 18%);  
+}
+
+.testimonial__text {
+  font-size: 1.2rem;
+
+  margin-bottom: 2rem;
+}
+
+.testimonial__profile {
+  /* border: 1px solid red; */
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: .9rem;
+}
+
+.testimonial__info h4 {
+  font-weight: 700;
+}
+
+.testimonial__info h5 {
+  font-weight: 400;
+}
+
+/* FOOTER SECTION */
+
+/* TODO: Terminar la maquetación de este footer según el diseño */
+
+.footer {
+  border: 1px solid red;
+
+  padding: 10rem 0 5rem 0;
+}
+
+.footer--wrapper  {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4rem;
+
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+  .footer-info {
+    flex-direction: row;
+  }
+}
+
+.footer-info__description {
+  width: 22rem;
+
+  display: flex;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.footer-info__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-info__contact span {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-info__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-info__social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-info__social a {
+  border: 1px solid white;
+  padding: .5rem;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-info__social a:hover {
+  background-color: hsl(198, 60%, 50%);
+  border: 1px solid hsl(198, 60%, 50%);
+}
