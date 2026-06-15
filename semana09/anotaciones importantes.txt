@@ -1,0 +1,10 @@
+para crear proyecto usar: npm create vite@latest
+descargar tailwind: npm install tailwindcss @tailwindcss/vite
+para correr el servidor solo usar comando: vite
+
+Snippets para crear components (rfc, rafce) en archivo app.jsx en carpeta src
+
+
+
+ME QUEDE EN EL 20/5/26
+VIDEO DE ESA FECHA
